@@ -12,13 +12,13 @@
         <meta name="author" content="Sana Team">
       
       
-        <link rel="canonical" href="https://nvlabs.github.io/Sana/docs/longsana/">
+        <link rel="canonical" href="https://nvlabs.github.io/Sana/docs/sol_rl/">
       
       
-        <link rel="prev" href="../sana_video_inference/">
+        <link rel="prev" href="../sana_cosmos_rl/">
       
       
-        <link rel="next" href="../sana_cosmos_rl/">
+        <link rel="next" href="../sana_controlnet/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>LongSANA - Sana Documentation</title>
+        <title>Sol-RL - Sana Documentation</title>
       
     
     
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#longsana-sana-video-longlive" class="md-skip">
+        <a href="#sol-rl-fp4-explore-bf16-train-for-sana-flux1-and-sd35-l" class="md-skip">
           Skip to content
         </a>
       
@@ -119,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              LongSANA
+              Sol-RL
             
           </span>
         </div>
@@ -626,10 +626,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -648,11 +646,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
@@ -673,7 +673,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -744,37 +744,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LongSANA
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../longsana/" class="md-nav__link">
         
   
   
@@ -790,115 +763,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#about-longsana" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📽️ About LongSANA
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-inference" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🏃 How to Inference
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🏃 How to Inference">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-how-to-use-longsana-pipelines-in-diffusers-coming-soon" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. How to use LongSANA Pipelines in 🧨diffusers (Coming soon)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-inference-with-txt-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Inference with TXT file
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-train" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        💻 How to Train
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="💻 How to Train">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#data-preparation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Data Preparation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#launch-training" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Launch Training
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -915,8 +779,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -933,13 +799,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -960,7 +824,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1003,10 +867,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../sol_rl/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sol-RL
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1022,6 +913,98 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-train" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Train
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-families" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Families
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reward-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reward Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reward Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-reward-checkpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Manual Reward Checkpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-downloaded-reward-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto-Downloaded Reward Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acknowledgements
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1400,72 +1383,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#about-longsana" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📽️ About LongSANA
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-inference" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🏃 How to Inference
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🏃 How to Inference">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-how-to-use-longsana-pipelines-in-diffusers-coming-soon" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. How to use LongSANA Pipelines in 🧨diffusers (Coming soon)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-inference-with-txt-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Inference with TXT file
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#how-to-train" class="md-nav__link">
     <span class="md-ellipsis">
       
-        💻 How to Train
+        How to Train
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="💻 How to Train">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-families" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Families
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reward-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reward Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reward Models">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#data-preparation" class="md-nav__link">
+  <a href="#manual-reward-checkpoints" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data Preparation
+        Manual Reward Checkpoints
       
     </span>
   </a>
@@ -1473,10 +1428,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#launch-training" class="md-nav__link">
+  <a href="#auto-downloaded-reward-models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Launch Training
+        Auto-Downloaded Reward Models
       
     </span>
   </a>
@@ -1485,6 +1440,17 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acknowledgements
+      
+    </span>
+  </a>
   
 </li>
       
@@ -1509,110 +1475,131 @@
 
 
 <p align="center" style="border-radius: 10px">
-  <img src="https://nvlabs.github.io/Sana/Video/logo.svg" width="70%" alt="SANA-Sprint Logo"/>
+  <img src="https://nvlabs.github.io/Sana/Sol-RL/asset/sol-rl_logo.png" width="82%" alt="Sol-RL Logo"/>
 </p>
 
-<h1 id="longsana-sana-video-longlive">🎬 LongSANA: SANA-Video + <a href="https://github.com/NVlabs/LongLive">LongLive</a><a class="headerlink" href="#longsana-sana-video-longlive" title="Permanent link">&para;</a></h1>
+<h1 id="sol-rl-fp4-explore-bf16-train-for-sana-flux1-and-sd35-l">Sol-RL: FP4 Explore, BF16 Train for SANA, FLUX.1, and SD3.5-L<a class="headerlink" href="#sol-rl-fp4-explore-bf16-train-for-sana-flux1-and-sd35-l" title="Permanent link">&para;</a></h1>
 <div align="center">
-  <a href="https://nvlabs.github.io/Sana/Video"><img src="https://img.shields.io/static/v1?label=Project&message=Github&color=blue&logo=github-pages"></a> &ensp;
-  <a href="https://arxiv.org/abs/2509.24695"><img src="https://img.shields.io/static/v1?label=Arxiv&message=Sana&color=red&logo=arxiv"></a> &ensp;
-  <a href=""><img src="https://img.shields.io/static/v1?label=diffusers&message=LongSANAPipeline&color=yellow"></a> &ensp;
+  <a href="https://nvlabs.github.io/Sana/Sol-RL/"><img src="https://img.shields.io/static/v1?label=Project&message=Homepage&color=blue&logo=github-pages" alt="Sol-RL Homepage"></a> &ensp;
+  <a href="https://arxiv.org/abs/2604.06916"><img src="https://img.shields.io/static/v1?label=Arxiv&message=Sol-RL&color=red&logo=arxiv" alt="Sol-RL Arxiv"></a>
 </div>
 
-<h2 id="about-longsana">📽️ About LongSANA<a class="headerlink" href="#about-longsana" title="Permanent link">&para;</a></h2>
-<p><strong>LongSANA</strong> is the specialized long-video variant of the SANA-Video framework. It is designed to create <strong>minute-long, high-resolution (720p)</strong> videos in real time.</p>
-<p>LongSANA's Core Contributions:</p>
+<p>This guide covers Sol-RL post-training in <code>Sana</code>, including single-node launchers, config families, reward setup, and model-specific notes for <strong>SANA</strong>, <strong>FLUX.1</strong>, and <strong>SD3.5-L</strong>.</p>
+<p>Base installation is shared with the rest of the repo and is documented in <a href="../installation/">Installation</a>.</p>
+<p>If you want the NVFP4 path (<code>*_naive_quant_*</code> or <code>*_sol_rl_*</code>), also install <code>transformer-engine</code> with the same Python interpreter used by <code>torchrun</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-build-isolation<span class="w"> </span><span class="s2">&quot;transformer-engine[pytorch]&quot;</span>
+</code></pre></div>
+<h2 id="how-to-train">How to Train<a class="headerlink" href="#how-to-train" title="Permanent link">&para;</a></h2>
+<p>Default single-node launchers:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>bash<span class="w"> </span>train_scripts/sol_rl/run_sana_single_node_8gpu.sh
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>bash<span class="w"> </span>train_scripts/sol_rl/run_sd3_single_node_8gpu.sh
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>bash<span class="w"> </span>train_scripts/sol_rl/run_flux1_single_node_8gpu.sh
+</code></pre></div>
+<p>Examples:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nv">CONFIG_SPEC</span><span class="o">=</span>configs/sol_rl/sana.py:sana_diffusionnft_pickscore<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>bash<span class="w"> </span>train_scripts/sol_rl/run_sana_single_node_8gpu.sh
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nv">CONFIG_SPEC</span><span class="o">=</span>configs/sol_rl/sd3.py:sd3_compile_hpsv2<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>bash<span class="w"> </span>train_scripts/sol_rl/run_sd3_single_node_8gpu.sh
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">CONFIG_SPEC</span><span class="o">=</span>configs/sol_rl/flux1.py:flux1_sol_rl_imagereward<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>bash<span class="w"> </span>train_scripts/sol_rl/run_flux1_single_node_8gpu.sh
+</code></pre></div>
+<h2 id="configuration-families">Configuration Families<a class="headerlink" href="#configuration-families" title="Permanent link">&para;</a></h2>
+<p>Config naming pattern:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>&lt;model&gt;_&lt;family&gt;_&lt;reward&gt;
+</code></pre></div>
+<p>Examples:</p>
 <ul>
-<li>
-<p><strong>Constant-Memory KV Cache</strong>: LongSANA addresses the memory explosion typical of long-context generation by reformulating causal linear attention. Instead of storing a growing history of tokens (which scales linearly or quadratically), it maintains a <strong>compact, fixed-size recurrent state</strong> (comprising the cumulative sum of states and keys). This reduces the memory complexity to <strong>$O(1)$</strong> (constant), allowing the model to generate arbitrarily long videos without increasing GPU memory usage.</p>
-</li>
-<li>
-<p><strong>Block-Wise Autoregressive Training</strong>: To effectively learn long-term temporal dependencies, the model employs a novel autoregressive training paradigm with <strong>Monotonically Increasing SNR Sampler</strong> and <strong>Improved Self-Forcing</strong>.</p>
-</li>
-<li>
-<p><strong>Performance</strong>: LongSANA generates 1-minute length video with 35 seconds, achieving 27 FPS generation speed.</p>
-</li>
+<li><code>sana_diffusionnft_pickscore</code></li>
+<li><code>sd3_compile_hpsv2</code></li>
+<li><code>flux1_sol_rl_imagereward</code></li>
 </ul>
-<h2 id="how-to-inference">🏃 How to Inference<a class="headerlink" href="#how-to-inference" title="Permanent link">&para;</a></h2>
-<h3 id="1-how-to-use-longsana-pipelines-in-diffusers-coming-soon">1. How to use LongSANA Pipelines in <code>🧨diffusers</code> (<a href="https://github.com/huggingface/diffusers/pull/12723">Coming soon</a>)<a class="headerlink" href="#1-how-to-use-longsana-pipelines-in-diffusers-coming-soon" title="Permanent link">&para;</a></h3>
-<blockquote>
-<p>[!IMPORTANT]</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/huggingface/diffusers
+<table>
+<thead>
+<tr>
+<th>Family</th>
+<th>Meaning</th>
+<th>Rollout shape</th>
+<th>TE / NVFP4 needed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>diffusionnft</code></td>
+<td>PEFT-only baseline</td>
+<td>24-in-24</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>naive_scaling</code></td>
+<td>PEFT brute-force scaling</td>
+<td>24-in-96</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>compile</code></td>
+<td>BF16 compiled brute-force scaling</td>
+<td>24-in-96</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>naive_quant</code></td>
+<td>Direct NVFP4 compiled rollout</td>
+<td>24-in-96</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>sol_rl</code></td>
+<td>Two-stage decoupled rollout</td>
+<td>24-in-96</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>In this repository:</p>
+<ul>
+<li><code>diffusionnft</code>: <code>preview_model="peft"</code>, <code>fullrollout_model="peft"</code></li>
+<li><code>naive_scaling</code>: <code>preview_model="peft"</code>, <code>fullrollout_model="peft"</code></li>
+<li><code>compile</code>: <code>fullrollout_model="compile"</code></li>
+<li><code>naive_quant</code>: <code>fullrollout_model="compile_nvfp4"</code></li>
+<li><code>sol_rl</code>: <code>preview_step=6</code>, <code>preview_model="compile_nvfp4"</code>, <code>fullrollout_model="compile"</code></li>
+</ul>
+<p>Recommended first runs:</p>
+<ul>
+<li><code>sana_diffusionnft_pickscore</code></li>
+<li><code>sd3_diffusionnft_pickscore</code></li>
+<li><code>flux1_diffusionnft_pickscore</code></li>
+</ul>
+<h2 id="reward-models">Reward Models<a class="headerlink" href="#reward-models" title="Permanent link">&para;</a></h2>
+<p>Current online reward suffixes:</p>
+<ul>
+<li><code>pickscore</code></li>
+<li><code>clipscore</code></li>
+<li><code>hpsv2</code></li>
+<li><code>imagereward</code></li>
+</ul>
+<h3 id="manual-reward-checkpoints">Manual Reward Checkpoints<a class="headerlink" href="#manual-reward-checkpoints" title="Permanent link">&para;</a></h3>
+<p><code>HPSv2</code> expects local files under <code>reward_ckpts/</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>reward_ckpts
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nb">cd</span><span class="w"> </span>reward_ckpts
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>wget<span class="w"> </span>https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K/resolve/main/open_clip_pytorch_model.bin
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>wget<span class="w"> </span>https://huggingface.co/xswu/HPSv2/resolve/main/HPS_v2.1_compressed.pt
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="nb">cd</span><span class="w"> </span>..
 </code></pre></div>
-</blockquote>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">diffusers</span><span class="w"> </span><span class="kn">import</span> <span class="n">LongSanaVideoPipeline</span><span class="p">,</span> <span class="n">FlowMatchEulerDiscreteScheduler</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">diffusers.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">export_to_video</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">pipe</span> <span class="o">=</span> <span class="n">LongSanaVideoPipeline</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="s2">&quot;Efficient-Large-Model/Sana-Video_2B_480p_LongLive_diffusers&quot;</span><span class="p">,</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">torch_dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">bfloat16</span><span class="p">,</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="n">base_chunk_frames</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="n">num_cached_blocks</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">)</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">pipe</span><span class="o">.</span><span class="n">scheduler</span> <span class="o">=</span> <span class="n">FlowMatchEulerDiscreteScheduler</span><span class="p">()</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="n">pipe</span><span class="o">.</span><span class="n">vae</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">pipe</span><span class="o">.</span><span class="n">text_encoder</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">bfloat16</span><span class="p">)</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="n">pipe</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s2">&quot;cuda&quot;</span><span class="p">)</span>
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;Evening, backlight, side lighting, soft light, high contrast, mid-shot, centered composition, clean solo shot, warm color. A young Caucasian man stands in a forest, golden light glimmers on his hair as sunlight filters through the leaves. He wears a light shirt, wind gently blowing his hair and collar, light dances across his face with his movements. The background is blurred, with dappled light and soft tree shadows in the distance. The camera focuses on his lifted gaze, clear and emotional.&quot;</span>
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="n">negative_prompt</span> <span class="o">=</span> <span class="s2">&quot;Bright tones, overexposed, static, blurred details, subtitles, style, works, paintings, images, static, overall gray, worst quality, low quality, JPEG compression residue, ugly, incomplete, extra fingers, poorly drawn hands, poorly drawn faces, deformed, disfigured, misshapen limbs, fused fingers, still picture, messy background, three legs, many people in the background, walking backwards&quot;</span>
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="n">video</span> <span class="o">=</span> <span class="n">pipe</span><span class="p">(</span>
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>    <span class="n">prompt</span><span class="o">=</span><span class="n">prompt</span><span class="p">,</span>
-<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>    <span class="n">negative_prompt</span><span class="o">=</span><span class="n">negative_prompt</span><span class="p">,</span>
-<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>    <span class="n">height</span><span class="o">=</span><span class="mi">480</span><span class="p">,</span>
-<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>    <span class="n">width</span><span class="o">=</span><span class="mi">832</span><span class="p">,</span>
-<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>    <span class="n">frames</span><span class="o">=</span><span class="mi">161</span><span class="p">,</span>
-<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>    <span class="n">guidance_scale</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
-<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>    <span class="n">timesteps</span><span class="o">=</span><span class="p">[</span><span class="mi">1000</span><span class="p">,</span> <span class="mi">960</span><span class="p">,</span> <span class="mi">889</span><span class="p">,</span> <span class="mi">727</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
-<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>    <span class="n">generator</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">Generator</span><span class="p">(</span><span class="n">device</span><span class="o">=</span><span class="s2">&quot;cuda&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">manual_seed</span><span class="p">(</span><span class="mi">42</span><span class="p">),</span>
-<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="p">)</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="n">export_to_video</span><span class="p">(</span><span class="n">video</span><span class="p">,</span> <span class="s2">&quot;longsana.mp4&quot;</span><span class="p">,</span> <span class="n">fps</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
-</code></pre></div>
-<h3 id="2-inference-with-txt-file">2. Inference with TXT file<a class="headerlink" href="#2-inference-with-txt-file" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Text to Video</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1"># num_frames = N_seconds x 16 + 1</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>accelerate<span class="w"> </span>launch<span class="w"> </span>--mixed_precision<span class="o">=</span>bf16<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span>inference_video_scripts/inference_sana_video.py<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span>--config<span class="o">=</span>configs/sana_video_config/Sana_2000M_480px_adamW_fsdp_longsana.yaml<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span>--model_path<span class="o">=</span>hf://Efficient-Large-Model/SANA-Video_2B_480p_LongLive/checkpoints/SANA_Video_2B_480p_LongLive.pth<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span>--work_dir<span class="o">=</span>output/inference/longsana_480p<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span>--txt_file<span class="o">=</span>asset/samples/video_prompts_samples.txt<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span>--dataset<span class="o">=</span>samples<span class="w"> </span>--cfg_scale<span class="o">=</span><span class="m">1</span>.0<span class="w"> </span>--num_frames<span class="w"> </span><span class="m">321</span>
-</code></pre></div>
-<h2 id="how-to-train">💻 How to Train<a class="headerlink" href="#how-to-train" title="Permanent link">&para;</a></h2>
-<h3 id="data-preparation">Data Preparation<a class="headerlink" href="#data-preparation" title="Permanent link">&para;</a></h3>
-<p>Please follow Self-Forcing to download training prompts:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>data/longsana
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>hf<span class="w"> </span>download<span class="w"> </span>gdhe17/Self-Forcing<span class="w"> </span>vidprom_filtered_extended.txt<span class="w"> </span>--local-dir<span class="w"> </span>data/longsana
-</code></pre></div>
-<h3 id="launch-training">Launch Training<a class="headerlink" href="#launch-training" title="Permanent link">&para;</a></h3>
-<p>LongSANA is trained in three stages: ODE Initialization, Self-Forcing Training and LongSANA Training. For ODE initialization, we directly provide the <a href="https://huggingface.co/Efficient-Large-Model/LongSANA_2B_480p_ode">ODE initialization checkpoint</a>. If you are interested in training this stage by yourself, you may follow the process described in the <a href="https://github.com/tianweiy/CausVid">CausVid</a> repo to generate trajectories and train the model with:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># `data_path: generated_ode_data_pair_path` in the config file need to be update. This is the data discussed above.</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>torchrun<span class="w"> </span>--nnodes<span class="o">=</span><span class="m">8</span><span class="w"> </span>--nproc_per_node<span class="o">=</span><span class="m">8</span><span class="w"> </span>--rdzv_id<span class="o">=</span><span class="m">5235</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span>--rdzv_backend<span class="o">=</span>c10d<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span>--rdzv_endpoint<span class="w"> </span><span class="nv">$MASTER_ADDR</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span>train_video_scripts/train_longsana.py<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span>--config_path<span class="w"> </span>configs/sana_video_config/longsana/480ms/ode.yaml<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span>--wandb_name<span class="w"> </span>debug_480p_ode<span class="w"> </span>--logdir<span class="w"> </span>output/debug_480p_ode
-</code></pre></div>
-<p>Self-Forcing Training and LongSANA Training can be implemented with:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>torchrun<span class="w"> </span>--nnodes<span class="o">=</span><span class="m">8</span><span class="w"> </span>--nproc_per_node<span class="o">=</span><span class="m">8</span><span class="w"> </span>--rdzv_id<span class="o">=</span><span class="m">5235</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span>--rdzv_backend<span class="o">=</span>c10d<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span>--rdzv_endpoint<span class="w"> </span><span class="nv">$MASTER_ADDR</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span>train_video_scripts/train_longsana.py<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span>--config_path<span class="w"> </span>configs/sana_video_config/longsana/480ms/self_forcing.yaml<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span>--wandb_name<span class="w"> </span>debug_480p_self_forcing<span class="w"> </span>--logdir<span class="w"> </span>output/debug_480p_self_forcing
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>torchrun<span class="w"> </span>--nnodes<span class="o">=</span><span class="m">8</span><span class="w"> </span>--nproc_per_node<span class="o">=</span><span class="m">8</span><span class="w"> </span>--rdzv_id<span class="o">=</span><span class="m">5235</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">  </span>--rdzv_backend<span class="o">=</span>c10d<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">  </span>--rdzv_endpoint<span class="w"> </span><span class="nv">$MASTER_ADDR</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">  </span>train_video_scripts/train_longsana.py<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">  </span>--config_path<span class="w"> </span>configs/sana_video_config/longsana/480ms/longsana.yaml<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="w">  </span>--wandb_name<span class="w"> </span>debug_480p_longsana<span class="w"> </span>--logdir<span class="w"> </span>output/debug_480p_longsana
-</code></pre></div>
+<h3 id="auto-downloaded-reward-models">Auto-Downloaded Reward Models<a class="headerlink" href="#auto-downloaded-reward-models" title="Permanent link">&para;</a></h3>
+<p>The other reward models are downloaded automatically on first use:</p>
+<ul>
+<li><code>clipscore</code>: <code>openai/clip-vit-large-patch14</code></li>
+<li><code>pickscore</code>: <code>laion/CLIP-ViT-H-14-laion2B-s32B-b79K</code> and <code>yuvalkirstain/PickScore_v1</code></li>
+<li><code>imagereward</code>: <code>ImageReward-v1.0</code></li>
+</ul>
+<h2 id="acknowledgements">Acknowledgements<a class="headerlink" href="#acknowledgements" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Sol-RL training recipes in this repo draw on <a href="https://github.com/scxue/advantage_weighted_matching">Advantage Weighted Matching</a> and <a href="https://github.com/NVlabs/DiffusionNFT">DiffusionNFT</a>.</li>
+</ul>
 
 
 
