@@ -12,13 +12,13 @@
         <meta name="author" content="Sana Team">
       
       
-        <link rel="canonical" href="https://nvlabs.github.io/Sana/docs/sana_sprint/">
+        <link rel="canonical" href="https://nvlabs.github.io/Sana/docs/sana_wm/">
       
       
-        <link rel="prev" href="../sana/">
+        <link rel="prev" href="../longsana/">
       
       
-        <link rel="next" href="../4bit_sana/">
+        <link rel="next" href="../sana_cosmos_rl/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>SANA-Sprint - Sana Documentation</title>
+        <title>SANA-WM - Sana Documentation</title>
       
     
     
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sana-sprint-one-step-diffusion-with-continuous-time-consistency-distillation" class="md-skip">
+        <a href="#sana-wm-efficient-minute-scale-world-modeling-with-hybrid-linear-diffusion-transformer" class="md-skip">
           Skip to content
         </a>
       
@@ -119,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SANA-Sprint
+              SANA-WM
             
           </span>
         </div>
@@ -413,10 +413,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -439,11 +437,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -464,7 +464,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -507,37 +507,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    SANA-Sprint
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../sana_sprint/" class="md-nav__link">
         
   
   
@@ -553,109 +526,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-inference" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How to Inference
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="How to Inference">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-how-to-use-sanasprintpipeline-with-diffusers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. How to use SanaSprintPipeline with 🧨diffusers
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-how-to-use-sanasprintpipeline-in-this-repo" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. How to use SanaSprintPipeline in this repo
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-train" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How to Train
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#convert-pth-to-diffusers-safetensor" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Convert pth to diffusers safetensor
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#performance" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Performance
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#citation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Citation
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -756,8 +626,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -778,13 +650,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
@@ -805,7 +675,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -904,10 +774,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../sana_wm/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SANA-WM
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -923,6 +820,131 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about-sana-wm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📽️ About SANA-WM
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚙️ Environment Setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏃 Inference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏃 Inference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-image-prompt-action-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 1 — image + prompt + action string
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-image-prompt-camera-trajectory-npy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example 2 — image + prompt + camera trajectory (.npy)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lower-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lower memory
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#argument-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎛️ Argument Reference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hf-repository-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📁 HF Repository Layout
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bibtex" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 BibTeX
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1424,22 +1446,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-to-inference" class="md-nav__link">
+  <a href="#about-sana-wm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        How to Inference
+        📽️ About SANA-WM
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="How to Inference">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚙️ Environment Setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏃 Inference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏃 Inference">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-how-to-use-sanasprintpipeline-with-diffusers" class="md-nav__link">
+  <a href="#example-1-image-prompt-action-string" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. How to use SanaSprintPipeline with 🧨diffusers
+        Example 1 — image + prompt + action string
       
     </span>
   </a>
@@ -1447,10 +1491,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-how-to-use-sanasprintpipeline-in-this-repo" class="md-nav__link">
+  <a href="#example-2-image-prompt-camera-trajectory-npy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. How to use SanaSprintPipeline in this repo
+        Example 2 — image + prompt + camera trajectory (.npy)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lower-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lower memory
       
     </span>
   </a>
@@ -1463,10 +1518,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-train" class="md-nav__link">
+  <a href="#argument-reference" class="md-nav__link">
     <span class="md-ellipsis">
       
-        How to Train
+        🎛️ Argument Reference
       
     </span>
   </a>
@@ -1474,10 +1529,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#convert-pth-to-diffusers-safetensor" class="md-nav__link">
+  <a href="#hf-repository-layout" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Convert pth to diffusers safetensor
+        📁 HF Repository Layout
       
     </span>
   </a>
@@ -1485,21 +1540,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#performance" class="md-nav__link">
+  <a href="#bibtex" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Performance
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#citation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Citation
+        📝 BibTeX
       
     </span>
   </a>
@@ -1527,153 +1571,204 @@
 
 
 <p align="center" style="border-radius: 10px">
-  <img src="https://nvlabs.github.io/Sana/Sprint/asset/SANA-Sprint.png" width="60%" alt="SANA-Sprint Logo"/>
+  <img src="https://raw.githubusercontent.com/NVlabs/Sana/refs/heads/main/asset/sana-wm-logo.png" width="70%" alt="SANA-WM Logo"/>
 </p>
 
-<h1 id="sana-sprint-one-step-diffusion-with-continuous-time-consistency-distillation">🏃SANA-Sprint: One-Step Diffusion with Continuous-Time Consistency Distillation<a class="headerlink" href="#sana-sprint-one-step-diffusion-with-continuous-time-consistency-distillation" title="Permanent link">&para;</a></h1>
+<h1 id="sana-wm-efficient-minute-scale-world-modeling-with-hybrid-linear-diffusion-transformer">🌍 SANA-WM: Efficient Minute-Scale World Modeling with Hybrid Linear Diffusion Transformer<a class="headerlink" href="#sana-wm-efficient-minute-scale-world-modeling-with-hybrid-linear-diffusion-transformer" title="Permanent link">&para;</a></h1>
 <div align="center">
-  <a href="https://nvlabs.github.io/Sana/Sprint"><img src="https://img.shields.io/static/v1?label=Project&message=Github&color=blue&logo=github-pages"></a> &ensp;
-  <a href="https://arxiv.org/abs/2503.09641"><img src="https://img.shields.io/static/v1?label=Arxiv&message=Sana&color=red&logo=arxiv"></a> &ensp;
-  <a href="https://discord.gg/rde6eaE5Ta"><img src="https://img.shields.io/static/v1?label=Discuss&message=Discord&color=purple&logo=discord"></a> &ensp;
+  <a href="https://nvlabs.github.io/Sana/WM"><img src="https://img.shields.io/static/v1?label=Project&message=Github&color=blue&logo=github-pages"></a> &ensp;
+  <a href="https://arxiv.org/abs/2605.15178"><img src="https://img.shields.io/static/v1?label=Arxiv&message=Sana-WM&color=red&logo=arxiv"></a> &ensp;
+  <a href="https://huggingface.co/Efficient-Large-Model/SANA-WM_bidirectional"><img src="https://img.shields.io/static/v1?label=HF%20Weights&message=SANA-WM&color=yellow&logo=huggingface"></a> &ensp;
 </div>
 
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=nI_Ohgf8eOU" target="_blank">
-    <img src="https://img.youtube.com/vi/nI_Ohgf8eOU/0.jpg" alt="Demo Video of SANA-Sprint" style="width: 49%; margin: 0 auto; display: inline-block">
-  </a>
-  <a href="https://www.youtube.com/watch?v=OOZzkirgsAc" target="_blank">
-    <img src="https://img.youtube.com/vi/OOZzkirgsAc/0.jpg" alt="Demo Video of SANA-Sprint" style="width: 49%; margin: 0 auto; display: inline-block">
-  </a>
+  <video src="https://nvlabs.github.io/Sana/WM/media/videos/hero_reel_v9.mp4#t=1" autoplay playsinline controls muted loop width="90%" onloadedmetadata="this.currentTime=1;this.playbackRate=2"></video>
 </div>
 
-<h2 id="how-to-inference">How to Inference<a class="headerlink" href="#how-to-inference" title="Permanent link">&para;</a></h2>
-<h3 id="1-how-to-use-sanasprintpipeline-with-diffusers">1. How to use <code>SanaSprintPipeline</code> with <code>🧨diffusers</code><a class="headerlink" href="#1-how-to-use-sanasprintpipeline-with-diffusers" title="Permanent link">&para;</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Upgrade your diffusers to use <code>SanaSprintPipeline</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>git+https://github.com/huggingface/diffusers
+<h2 id="about-sana-wm">📽️ About SANA-WM<a class="headerlink" href="#about-sana-wm" title="Permanent link">&para;</a></h2>
+<p><strong>SANA-WM</strong> is an efficient 2.6 B-parameter open-source world model trained natively for one-minute video generation. It synthesises 720p, minute-scale videos with precise 6-DoF camera control, paired with an LTX-2 sink-bidirectional Euler refiner for high-fidelity decoding.</p>
+<p>Core contributions:</p>
+<ul>
+<li><strong>Hybrid Linear Attention</strong> — frame-wise Gated DeltaNet combined with softmax attention every $N$-th block for memory-efficient long-context modelling.</li>
+<li><strong>Dual-Branch Camera Control</strong> — independent main and camera branches enable precise per-frame trajectory adherence (6 DoF).</li>
+<li><strong>Two-Stage Generation Pipeline</strong> — a long-video refiner stitched on top of Stage-1 latents improves quality and temporal consistency.</li>
+<li><strong>Robust Annotation Pipeline</strong> — metric-scale 6-DoF camera poses extracted from public corpora yield spatiotemporally consistent action supervision.</li>
+</ul>
+<p>SANA-WM completes pre-training in 15 days on 64 H100s and generates a 60s 720p clip on a single GPU; the distilled variant runs on an RTX 5090 with NVFP4 quantisation.</p>
+<blockquote>
+<p><strong>Note</strong> This is the initial release and currently ships <strong>bidirectional inference only</strong>. More variants are on the way — stay tuned.</p>
+</blockquote>
+<h2 id="environment-setup">⚙️ Environment Setup<a class="headerlink" href="#environment-setup" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>bash<span class="w"> </span>./environment_setup.sh<span class="w"> </span>sana
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>conda<span class="w"> </span>activate<span class="w"> </span>sana
 </code></pre></div>
-</div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># test sana sprint</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">diffusers</span><span class="w"> </span><span class="kn">import</span> <span class="n">SanaSprintPipeline</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">pipeline</span> <span class="o">=</span> <span class="n">SanaSprintPipeline</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="s2">&quot;Efficient-Large-Model/Sana_Sprint_1.6B_1024px_diffusers&quot;</span><span class="p">,</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">torch_dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">bfloat16</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">)</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c1"># Use DC-AE-Lite for faster speed.</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1"># from diffusers import AutoencoderDC</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="c1"># vae = AutoencoderDC.from_pretrained(&quot;mit-han-lab/dc-ae-lite-f32c32-sana-1.1-diffusers&quot;)</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="c1"># pipeline.vae = vae</span>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">pipeline</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s2">&quot;cuda:0&quot;</span><span class="p">)</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;a tiny astronaut hatching from an egg on the moon&quot;</span>
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="n">image</span> <span class="o">=</span> <span class="n">pipeline</span><span class="p">(</span><span class="n">prompt</span><span class="o">=</span><span class="n">prompt</span><span class="p">,</span> <span class="n">num_inference_steps</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="n">image</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;test_out.png&quot;</span><span class="p">)</span>
+<h2 id="inference">🏃 Inference<a class="headerlink" href="#inference" title="Permanent link">&para;</a></h2>
+<p>All Stage-1 / Stage-2 weights, the VAE, and the LTX-2 Gemma text encoder are
+fetched on first use from
+<a href="https://huggingface.co/Efficient-Large-Model/SANA-WM_bidirectional"><code>Efficient-Large-Model/SANA-WM_bidirectional</code></a>
+— no manual download required.</p>
+<h3 id="example-1-image-prompt-action-string">Example 1 — image + prompt + action string<a class="headerlink" href="#example-1-image-prompt-action-string" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>inference_video_scripts/inference_sana_wm.py<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span>--image<span class="w">      </span>asset/sana_wm/demo_0.png<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span>--prompt<span class="w">     </span>asset/sana_wm/demo_0.txt<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span>--action<span class="w">     </span><span class="s2">&quot;w-80,jw-40,w-40,lw-60,w-100&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span>--translation_speed<span class="w"> </span><span class="m">0</span>.055<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span>--rotation_speed_deg<span class="w"> </span><span class="m">1</span>.2<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span>--num_frames<span class="w"> </span><span class="m">321</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span>--output_dir<span class="w"> </span>results/sana_wm_demo
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># if you want to compile the vae. You need to upgrade to torch&gt;=2.6.0</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1"># DCAE1.1: 1287MB/0.12s; DCAE1.1Lite:11299MB/0.06s; DCAE1.1Lite compile: 10385MB/0.03s</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">diffusers</span><span class="w"> </span><span class="kn">import</span> <span class="n">AutoencoderDC</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">torch</span><span class="o">.</span><span class="n">_dynamo</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">force_parameter_static_shapes</span> <span class="o">=</span> <span class="kc">False</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">torch</span><span class="o">.</span><span class="n">_dynamo</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">dynamic_shapes</span> <span class="o">=</span> <span class="kc">True</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="n">torch</span><span class="o">.</span><span class="n">_dynamo</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">recompile_limit</span> <span class="o">=</span> <span class="mi">16</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">vae</span> <span class="o">=</span> <span class="n">AutoencoderDC</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;mit-han-lab/dc-ae-lite-f32c32-sana-1.1-diffusers&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s1">&#39;cuda&#39;</span><span class="p">)</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="n">vae</span><span class="o">.</span><span class="n">decode</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">vae</span><span class="o">.</span><span class="n">decode</span><span class="p">,</span> <span class="n">dynamic</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<p>Action DSL: each segment is <code>&lt;keys&gt;-&lt;frames&gt;</code> joined by commas. Movement keys
+<code>w</code> (forward), <code>a</code> (strafe left), <code>s</code> (back), <code>d</code> (strafe right) translate
+on the world horizontal plane; rotation keys <code>i</code> (pitch up), <code>k</code> (pitch
+down), <code>j</code> (yaw left), <code>l</code> (yaw right) act in the camera's local frame.
+<code>none-N</code> holds the pose for <code>N</code> frames.</p>
+<h3 id="example-2-image-prompt-camera-trajectory-npy">Example 2 — image + prompt + camera trajectory (<code>.npy</code>)<a class="headerlink" href="#example-2-image-prompt-camera-trajectory-npy" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python<span class="w"> </span>inference_video_scripts/inference_sana_wm.py<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span>--image<span class="w">      </span>asset/sana_wm/demo_0.png<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span>--prompt<span class="w">     </span>asset/sana_wm/demo_0.txt<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span>--camera<span class="w">     </span>asset/sana_wm/demo_0_pose.npy<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span>--intrinsics<span class="w"> </span>asset/sana_wm/demo_0_intrinsics.npy<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span>--num_frames<span class="w"> </span><span class="m">321</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span>--output_dir<span class="w"> </span>results/sana_wm_demo
 </code></pre></div>
-<h3 id="2-how-to-use-sanasprintpipeline-in-this-repo">2. How to use <code>SanaSprintPipeline</code> in this repo<a class="headerlink" href="#2-how-to-use-sanasprintpipeline-in-this-repo" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">torch</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">app.sana_sprint_pipeline</span><span class="w"> </span><span class="kn">import</span> <span class="n">SanaSprintPipeline</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">torchvision.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">save_image</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">&quot;cuda:0&quot;</span> <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s2">&quot;cpu&quot;</span><span class="p">)</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">generator</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">Generator</span><span class="p">(</span><span class="n">device</span><span class="o">=</span><span class="n">device</span><span class="p">)</span><span class="o">.</span><span class="n">manual_seed</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="n">sana</span> <span class="o">=</span> <span class="n">SanaSprintPipeline</span><span class="p">(</span><span class="s2">&quot;configs/sana_sprint_config/1024ms/SanaSprint_1600M_1024px_allqknorm_bf16_scm_ladd.yaml&quot;</span><span class="p">)</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="n">sana</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;hf://Efficient-Large-Model/Sana_Sprint_1.6B_1024px/checkpoints/Sana_Sprint_1.6B_1024px.pth&quot;</span><span class="p">)</span>
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="n">prompt</span> <span class="o">=</span> <span class="s2">&quot;a tiny astronaut hatching from an egg on the moon&quot;</span><span class="p">,</span>
-<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
-<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="n">image</span> <span class="o">=</span> <span class="n">sana</span><span class="p">(</span>
-<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    <span class="n">prompt</span><span class="o">=</span><span class="n">prompt</span><span class="p">,</span>
-<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    <span class="n">height</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span>
-<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>    <span class="n">width</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span>
-<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>    <span class="n">guidance_scale</span><span class="o">=</span><span class="mf">4.5</span><span class="p">,</span>
-<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>    <span class="n">num_inference_steps</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
-<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>    <span class="n">generator</span><span class="o">=</span><span class="n">generator</span><span class="p">,</span>
-<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="p">)</span>
-<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="n">save_image</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="s1">&#39;sana_sprint.png&#39;</span><span class="p">,</span> <span class="n">nrow</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">value_range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<p><code>--camera</code> is a NumPy <code>.npy</code> of shape <code>(F, 4, 4)</code> (camera-to-world
+matrices); <code>--intrinsics</code> is <code>.npy</code> of shape <code>(3, 3)</code>, <code>(F, 3, 3)</code>, or
+<code>(4,) = (fx, fy, cx, cy)</code> in input-image pixels. If <code>--intrinsics</code> is
+omitted we estimate it from <code>--image</code> with Pi3X and abort if the
+resulting FOV is outside <code>[25°, 120°]</code>.</p>
+<h3 id="lower-memory">Lower memory<a class="headerlink" href="#lower-memory" title="Permanent link">&para;</a></h3>
+<p>For tight VRAM budgets, opt in to lazy-load + CPU offload:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>...<span class="w"> </span>--offload_vae<span class="w"> </span>--offload_refiner
 </code></pre></div>
-<h2 id="how-to-train">How to Train<a class="headerlink" href="#how-to-train" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>bash<span class="w"> </span>train_scripts/train_scm_ladd.sh<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">      </span>configs/sana_sprint_config/1024ms/SanaSprint_1600M_1024px_allqknorm_bf16_scm_ladd.yaml
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">      </span>--data.data_dir<span class="o">=</span><span class="s2">&quot;[data/toy_data]&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">      </span>--data.type<span class="o">=</span>SanaWebDatasetMS<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">      </span>--model.multi_scale<span class="o">=</span><span class="nb">true</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">      </span>--data.load_vae_feat<span class="o">=</span><span class="nb">true</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">      </span>--train.train_batch_size<span class="o">=</span><span class="m">2</span>
-</code></pre></div>
-<h2 id="convert-pth-to-diffusers-safetensor">Convert pth to diffusers safetensor<a class="headerlink" href="#convert-pth-to-diffusers-safetensor" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>python<span class="w"> </span>scripts/convert_scripts/convert_sana_to_diffusers.py<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">      </span>--orig_ckpt_path<span class="w"> </span>Efficient-Large-Model/Sana_Sprint_1.6B_1024px/checkpoints/Sana_Sprint_1.6B_1024px.pth<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">      </span>--model_type<span class="w"> </span>SanaSprint_1600M_P1_D20<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">      </span>--scheduler_type<span class="w"> </span>scm<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">      </span>--dtype<span class="w"> </span>bf16<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">      </span>--dump_path<span class="w"> </span>output/Sana_Sprint_1.6B_1024px_diffusers<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">      </span>--save_full_pipeline
-</code></pre></div>
-<h2 id="performance">Performance<a class="headerlink" href="#performance" title="Permanent link">&para;</a></h2>
+<h2 id="argument-reference">🎛️ Argument Reference<a class="headerlink" href="#argument-reference" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Methods (1024x1024)</th>
-<th>Inference Steps</th>
-<th>Throughput (samples/s)</th>
-<th>Latency (s)</th>
-<th>Params (B)</th>
-<th>FID 👇</th>
-<th>CLIP 👆</th>
-<th>GenEval 👆</th>
+<th>Argument</th>
+<th>Format / Default</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong><a href="">Sana-Sprint_0.6B</a></strong></td>
-<td>2</td>
-<td>6.46</td>
-<td>0.25</td>
-<td>0.6</td>
-<td>6.54</td>
-<td>28.40</td>
-<td>0.76</td>
+<td><code>--image</code></td>
+<td>First-frame RGB image. Aspect-preserving resized + center-cropped to 704×1280.</td>
 </tr>
 <tr>
-<td><strong><a href="https://huggingface.co/Efficient-Large-Model/Sana_Sprint_1.6B_1024px">Sana-Sprint-1.6B</a></strong></td>
-<td>2</td>
-<td>5.68</td>
-<td>0.24</td>
-<td>1.6</td>
-<td><strong>6.50</strong></td>
-<td><strong>28.45</strong></td>
-<td><strong>0.77</strong></td>
+<td><code>--prompt</code></td>
+<td>UTF-8 text file with the conditioning prompt.</td>
+</tr>
+<tr>
+<td><code>--camera</code></td>
+<td><code>(F, 4, 4)</code> <code>.npy</code> camera-to-world matrices. Mutually exclusive with <code>--action</code>.</td>
+</tr>
+<tr>
+<td><code>--action</code></td>
+<td>WASD/IJKL DSL. Rolled out via <code>action_string_to_c2w</code> to a <code>(F+1, 4, 4)</code> trajectory.</td>
+</tr>
+<tr>
+<td><code>--translation_speed</code></td>
+<td>Per-frame translation magnitude (default <code>0.05</code>).</td>
+</tr>
+<tr>
+<td><code>--rotation_speed_deg</code></td>
+<td>Per-frame rotation magnitude in degrees (default <code>1.2</code>).</td>
+</tr>
+<tr>
+<td><code>--intrinsics</code></td>
+<td>Optional <code>.npy</code> of shape <code>(3, 3)</code>, <code>(F, 3, 3)</code>, or <code>(4,)</code>. Pi3X-estimated if omitted.</td>
+</tr>
+<tr>
+<td><code>--num_frames</code></td>
+<td>Total frames to generate (default <code>161</code>; the demos above use <code>321</code>).</td>
+</tr>
+<tr>
+<td><code>--fps</code></td>
+<td>Output mp4 frame rate (default <code>16</code>).</td>
+</tr>
+<tr>
+<td><code>--step</code></td>
+<td>Stage-1 DiT sampling steps (default <code>60</code>).</td>
+</tr>
+<tr>
+<td><code>--cfg_scale</code></td>
+<td>Classifier-free-guidance scale (default <code>5.0</code>).</td>
+</tr>
+<tr>
+<td><code>--flow_shift</code></td>
+<td>Override the scheduler's <code>inference_flow_shift</code>.</td>
+</tr>
+<tr>
+<td><code>--no_refiner</code></td>
+<td>Skip the LTX-2 refiner and decode Stage-1 latents with the Sana VAE (faster, lower quality).</td>
+</tr>
+<tr>
+<td><code>--refiner_root</code></td>
+<td>LTX-2 refiner root containing <code>transformer/</code> and <code>connectors/</code>.</td>
+</tr>
+<tr>
+<td><code>--no_action_overlay</code></td>
+<td>Skip the WASD + joystick overlay on the output video.</td>
+</tr>
+<tr>
+<td><code>--offload_vae</code></td>
+<td>Move the VAE to CPU between encode / decode steps.</td>
+</tr>
+<tr>
+<td><code>--offload_refiner</code></td>
+<td>Lazy-load the LTX-2 refiner only when needed; release afterwards.</td>
 </tr>
 </tbody>
 </table>
-<hr />
-<h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nc">@misc</span><span class="p">{</span><span class="nl">chen2025sanasprint</span><span class="p">,</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">      </span><span class="na">title</span><span class="p">=</span><span class="s">{SANA-Sprint: One-Step Diffusion with Continuous-Time Consistency Distillation}</span><span class="p">,</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">      </span><span class="na">author</span><span class="p">=</span><span class="s">{Junsong Chen and Shuchen Xue and Yuyang Zhao and Jincheng Yu and Sayak Paul and Junyu Chen and Han Cai and Enze Xie and Song Han}</span><span class="p">,</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">      </span><span class="na">year</span><span class="p">=</span><span class="s">{2025}</span><span class="p">,</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">      </span><span class="na">eprint</span><span class="p">=</span><span class="s">{2503.09641}</span><span class="p">,</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">      </span><span class="na">archivePrefix</span><span class="p">=</span><span class="s">{arXiv}</span><span class="p">,</span>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">      </span><span class="na">primaryClass</span><span class="p">=</span><span class="s">{cs.CV}</span><span class="p">,</span>
-<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">      </span><span class="na">url</span><span class="p">=</span><span class="s">{https://arxiv.org/abs/2503.09641}</span><span class="p">,</span>
-<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="p">}</span>
+<h2 id="hf-repository-layout">📁 HF Repository Layout<a class="headerlink" href="#hf-repository-layout" title="Permanent link">&para;</a></h2>
+<p><code>Efficient-Large-Model/SANA-WM_bidirectional</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Path</th>
+<th style="text-align: right;">Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sana DiT (Stage 1)</td>
+<td><code>dit/sana_wm_1600m_720p.safetensors</code></td>
+<td style="text-align: right;">10 GB</td>
+</tr>
+<tr>
+<td>LTX-2 VAE (diffusers)</td>
+<td><code>vae/</code></td>
+<td style="text-align: right;">2 GB</td>
+</tr>
+<tr>
+<td>LTX-2 refiner (Stage 2)</td>
+<td><code>refiner/{transformer,connectors}/</code></td>
+<td style="text-align: right;">38 GB</td>
+</tr>
+<tr>
+<td>Gemma text encoder for the refiner</td>
+<td><code>refiner/text_encoder/</code></td>
+<td style="text-align: right;">46 GB</td>
+</tr>
+<tr>
+<td>Inference config</td>
+<td><code>config.yaml</code></td>
+<td style="text-align: right;">—</td>
+</tr>
+</tbody>
+</table>
+<p>The Sana text encoder (<code>gemma-2-2b-it</code>) is fetched separately from
+<code>Efficient-Large-Model/gemma-2-2b-it</code>.</p>
+<h2 id="bibtex">📝 BibTeX<a class="headerlink" href="#bibtex" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nc">@misc</span><span class="p">{</span><span class="nl">zhu2026sanawm</span><span class="p">,</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">      </span><span class="na">title</span><span class="p">=</span><span class="s">{SANA-WM: Efficient Minute-Scale World Modeling with Hybrid Linear Diffusion Transformer}</span><span class="p">,</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">      </span><span class="na">author</span><span class="p">=</span><span class="s">{Haoyi Zhu and Haozhe Liu and Yuyang Zhao and Tian Ye and Junsong Chen and Jincheng Yu and Tong He and Song Han and Enze Xie}</span><span class="p">,</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">      </span><span class="na">year</span><span class="p">=</span><span class="s">{2026}</span><span class="p">,</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">      </span><span class="na">eprint</span><span class="p">=</span><span class="s">{2605.15178}</span><span class="p">,</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">      </span><span class="na">archivePrefix</span><span class="p">=</span><span class="s">{arXiv}</span><span class="p">,</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">      </span><span class="na">primaryClass</span><span class="p">=</span><span class="s">{cs.CV}</span><span class="p">,</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">      </span><span class="na">url</span><span class="p">=</span><span class="s">{https://arxiv.org/abs/2605.15178}</span><span class="p">,</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="p">}</span>
 </code></pre></div>
 
 
